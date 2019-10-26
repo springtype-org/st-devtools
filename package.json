@@ -1,0 +1,26 @@
+{
+  "name": "st-devtools-chrome",
+  "private": false,
+  "version": "2.0.0-alpha.1",
+  "description": "SpringType DevTools for Chrome",
+  "scripts": {
+    "clean": "npx st-rm-rf dist",
+    "build": "cross-env NODE_ENV=production ts-node st-start.ts"
+  },
+  "author": "Aron Homberg <info@aron-homberg.de>, Michael Mannseicher <m.mansi1@gmx.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.91",
+    "@types/node": "^12.11.7",
+    "cross-env": "^6.0.3",
+    "typescript": "^3.6.2",
+    "st-start": "2.0.0-alpha.20",
+    "springtype": "2.0.0-alpha.1.15",
+    "st-cp": "1.0.0-alpha.1.49",
+    "ts-node": "8.4.1",
+    "st-rm-rf": "1.0.0-alpha.1.42"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
