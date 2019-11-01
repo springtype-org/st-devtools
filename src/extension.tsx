@@ -1,13 +1,13 @@
 import { st } from "springtype/core/st";
-import { customElement } from "springtype/web/customelement";
-import { ILifecycle } from "springtype/web/customelement/interface";
 import { tsx } from "springtype/web/vdom";
-import { getQueryParameter } from "./function/getQueryParameter";
+import {getQueryParameter} from "./function/getqueryparameter";
 import { OptionPage } from "./page/option-page/option-page";
 import { PopupPage } from "./page/popup-page/popup-page";
+import {component} from "springtype/web/component";
+import {ILifecycle} from "springtype/web/component/interface";
 
-@customElement()
-export class extension extends st.element implements ILifecycle {
+@component()
+export class extension extends st.component implements ILifecycle {
 
   constructor() {
     super();
@@ -22,6 +22,7 @@ export class extension extends st.element implements ILifecycle {
     switch (value) {
       case "option":
         return <OptionPage />;
+      default:
       case "popup":
         return <PopupPage />;
     }

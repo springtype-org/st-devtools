@@ -1,14 +1,14 @@
-import { customElement } from 'springtype/web/customelement';
-import { ILifecycle } from 'springtype/web/customelement/interface';
-import { st } from '../../../../../src/core';
+import {st} from "springtype/core";
 import tss from "./option-page.style";
 import tpl from "./option-page.tpl";
+import {ILifecycle} from "springtype/web/component/interface";
+import {component} from "springtype/web/component";
 
-@customElement({
+@component({
     tpl,
     tss
 })
-export class OptionPage extends st.element implements ILifecycle {
+export class OptionPage extends st.component implements ILifecycle {
 }
 
 

@@ -1,11 +1,11 @@
-import { st } from "springtype/core/st";
-import { customElement } from "springtype/web/customelement";
-import { ILifecycle } from "springtype/web/customelement/interface";
 import tss from "./popup-page.style";
 import tpl from "./popup-page.tpl";
+import {component} from "springtype/web/component";
+import {st} from "springtype/core";
+import {ILifecycle} from "springtype/web/component/interface";
 
-@customElement({ tpl, tss })
-export class PopupPage extends st.element implements ILifecycle {
+@component({ tpl, tss })
+export class PopupPage extends st.component implements ILifecycle {
   onButtonClick(evt: any) {
     evt.preventDefault();
     if (evt.target) {

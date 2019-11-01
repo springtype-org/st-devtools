@@ -1,6 +1,4 @@
-export interface IQueryParameters {
-  [key: string]: string | string[];
-}
+import {IQueryParameters} from "../interface/iqueryparameters";
 
 export const getQueryParameter = (parameterName: string): string | string[] => {
   const queryParams = getQueryParameters();
