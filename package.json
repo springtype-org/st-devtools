@@ -4,22 +4,56 @@
   "version": "2.0.0-alpha.1",
   "description": "SpringType DevTools for Chrome",
   "scripts": {
-    "build": "st-run st-rm-rf dist ++ cross-env NODE_ENV=production st-start ++ st-cp mainfest.json assets dist"
+    "prebundel": "st-run st-rm-rf dist ++ st-start -e production ++ st-cp manifest.json assets dist",
+    "bundel": "st-run st-rm-rf dist/report.html ++ crx pack dist -p st-devtools.pem -o dist/st-devtools.crx",
+    "start": "st-start"
   },
   "author": "Aron Homberg <info@aron-homberg.de>, Michael Mannseicher <m.mansi1@gmx.net>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/plugin-transform-typescript": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/runtime": "^7.6.3",
     "@types/chrome": "^0.0.91",
     "@types/node": "^12.11.7",
+    "autoprefixer": "^9.7.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "cross-env": "^6.0.3",
-    "typescript": "^3.6.2",
+    "css-loader": "^3.2.0",
+    "error-overlay-webpack-plugin": "^0.4.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lost": "^8.3.1",
+    "node-notifier": "^6.0.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
     "springtype": "2.0.0-alpha.1.17",
-    "ts-node": "8.4.1"
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "ts-node": "8.4.1",
+    "typescript": "^3.6.2",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-dev-server": "^3.9.0"
   },
   "browserslist": [
     "last 1 Chrome version"
   ],
   "dependencies": {
-    "yarn": "^1.19.1"
+    "springtype": "2.0.0-alpha.1.17"
   }
 }

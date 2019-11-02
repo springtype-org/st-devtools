@@ -844,9 +844,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "12.12.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.4.tgz#8ed27dba0a83b020fca035f003ffe21f70207a9c"
-  integrity sha512-tJUH7//zNZ/539DH4cgZS3NsmW0b9ShDeRBzoCEMCEAlHn5WHUghOfHdycvpo4RCxxEPmQ3WfjDogh+DCCvuSg==
+  version "12.12.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.5.tgz#66103d2eddc543d44a04394abb7be52506d7f290"
+  integrity sha512-KEjODidV4XYUlJBF3XdjSH5FWoMCtO0utnhtdLf1AgeuZLOrRbvmU/gaRCVg7ZaQDjVf3l84egiY0mRNe5xE4A==
 
 "@types/node@^12.11.7":
   version "12.11.7"
@@ -2116,7 +2116,7 @@ cross-env@^6.0.3:
   dependencies:
     cross-spawn "^7.0.0"
 
-cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
+cross-spawn@6.0.5, cross-spawn@^6.0.0:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
   integrity sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==
@@ -2646,9 +2646,9 @@ ejs@^2.6.1:
   integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
 
 electron-to-chromium@^1.3.247, electron-to-chromium@^1.3.295:
-  version "1.3.298"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.298.tgz#6f2b09c9b4ffca6a6745d80272dad987bcf5689c"
-  integrity sha512-IcgwlR5x4qtsVr1X+GDnbDEp0bAAqRA9EHP+bvIn3g5KF59Eiqjm59p27tg8b4YmgmpjfKWgec3trDRTWiVJgg==
+  version "1.3.299"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.299.tgz#9113b733247c68b87e07cb7c940a22913fb74d38"
+  integrity sha512-aH3lKMQFPuNk4w7W3hQDqnjfYKJQLzbp5Adn6xgTz5547kKSGOmAU7cQWxH953L4ntZL4HsZ8XWqfcMTvTcEMw==
 
 elliptic@^6.0.0:
   version "6.5.1"
@@ -5801,6 +5801,14 @@ postcss-modules-values@^3.0.0:
     icss-utils "^4.0.0"
     postcss "^7.0.6"
 
+postcss-nested@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.1.2.tgz#8e0570f736bfb4be5136e31901bf2380b819a561"
+  integrity sha512-9bQFr2TezohU3KRSu9f6sfecXmf/x6RXDedl8CHF6fyuyVW7UqgNMRdWMHZQWuFY6Xqs2NYk+Fj4Z4vSOf7PQg==
+  dependencies:
+    postcss "^7.0.14"
+    postcss-selector-parser "^5.0.0"
+
 postcss-nesting@^7.0.0:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-7.0.1.tgz#b50ad7b7f0173e5b5e3880c3501344703e04c052"
@@ -7015,7 +7023,7 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-springtype@^2.0.0-alpha.1.17:
+springtype@2.0.0-alpha.1.17:
   version "2.0.0-alpha.1.17"
   resolved "https://registry.yarnpkg.com/springtype/-/springtype-2.0.0-alpha.1.17.tgz#4651945657138f378e2509b83fd5865cac94522c"
   integrity sha512-iqj62Ib+dOE+aHYqvCAhYZ+Mh3Q9I1HYrND2ksw222BnYVV6fh4AlNGIg8qMpUOwLrI0l10VIMVvtCmXzaE45A==
@@ -7054,14 +7062,6 @@ ssri@^7.0.0:
   dependencies:
     figgy-pudding "^3.5.1"
     minipass "^3.1.1"
-
-st-rm-rf@^2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/st-rm-rf/-/st-rm-rf-2.0.0-alpha.1.tgz#cff9c90a117c3d7bc929db3bf8267f2c82423cfe"
-  integrity sha512-0V1eWc/zdtEN2wtOAPoQ/IdKwQnO9PJz2/VCiVcalZBSHJ1us3Nr0IMMR4q0Iou3Nqf3CHrHMnlrFMCNBVKD8g==
-  dependencies:
-    chalk "^2.4.2"
-    cross-spawn "^6.0.5"
 
 stable@^0.1.8:
   version "0.1.8"
@@ -7990,11 +7990,6 @@ yargs@^7.0.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
-
-yarn@^1.19.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.19.1.tgz#14b92410dd1ba5bab87a12b4a3d807f4569bea97"
-  integrity sha512-gBnfbL9rYY05Gt0cjJhs/siqQXHYlZalTjK3nXn2QO20xbkIFPob+LlH44ML47GcR4VU9/2dYck1BWFM0Javxw==
 
 yn@^3.0.0:
   version "3.1.1"

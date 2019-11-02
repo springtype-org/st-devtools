@@ -9,7 +9,8 @@
   ],
   "background": {
     "scripts": [
-      "background.js"
+      "background-main.js",
+      "background-runtime.js"
     ],
     "persistent": false
   },

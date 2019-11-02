@@ -11,19 +11,15 @@ export class extension extends st.component implements ILifecycle {
 
   constructor() {
     super();
-
-    console.log('extension ctor');
   }
 
   render() {
-    console.log('extension render');
-
     const value = getQueryParameter("page");
     switch (value) {
       case "option":
         return <OptionPage />;
-      default:
       case "popup":
+      default:
         return <PopupPage />;
     }
   }
