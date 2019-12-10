@@ -12,7 +12,9 @@ export class PopupPage extends st.component implements ILifecycle {
       let color = "green";
       chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         // @ts-ignore
-        chrome.tabs.executeScript(tabs[0].id, { code: 'document.body.style.backgroundColor = "' + color + '";' });
+        chrome.tabs.executeScript(tabs[0].id, {
+          code: 'document.body.style.backgroundColor = "' + color + '";'
+        });
       });
     }
   }

@@ -1,34 +1,23 @@
 {
-  "name": "SpringType DevTools for Chrome",
+  "name": "SpringType DevTools",
   "version": "1.0.0",
-  "description": "SpringType DevTools for Chrome",
-  "permissions": [
-    "activeTab",
-    "declarativeContent",
-    "storage"
-  ],
-  "background": {
-    "scripts": [
-      "background-main.js",
-      "background-runtime.js"
-    ],
-    "persistent": false
-  },
-  "incognito": "spanning",
-  "page_action": {
-    "default_popup": "index.html?page=popup",
+  "manifest_version": 2,
+  "description": "SpringType extension to inspect and debug SpringType components",
+  "permissions": ["tabs","activeTab"],
+  "minimum_chrome_version": "55",
+  "devtools_page": "browser-action/index.html",
+  "browser_action": {
     "default_icon": {
-      "16": "assets/icon_16.png",
-      "32": "assets/icon_32.png",
-      "48": "assets/icon_48.png",
-      "128": "assets/icon_128.png"
+      "16": "assets/disabled/icon_16.png",
+      "32": "assets/disabled/icon_32.png",
+      "48": "assets/disabled/icon_48.png",
+      "128": "assets/disabled/icon_128.png"
     }
   },
   "icons": {
-    "16": "assets/icon_16.png",
-    "32": "assets/icon_32.png",
-    "48": "assets/icon_48.png",
-    "128": "assets/icon_128.png"
-  },
-  "manifest_version": 2
+    "16": "assets/activated/icon_16.png",
+    "32": "assets/activated/icon_32.png",
+    "48": "assets/activated/icon_48.png",
+    "128": "assets/activated/icon_128.png"
+  }
 }
